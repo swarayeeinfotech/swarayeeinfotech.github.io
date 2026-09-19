@@ -3,69 +3,234 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Swarayee Comps And Infotech</title>
+
+  <meta name="description" content="Swarayee Comps And Infotech - Computer Education, Digital Services, Banking Services, Courier, Printing and Government Services.">
+
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans Devanagari", sans-serif;
+      line-height: 1.6;
       color: #222;
+      background: #f7f9fc;
     }
 
     header {
-      background: linear-gradient(135deg, #e85d04, #0057b8);
+      background: linear-gradient(135deg, #e85d04, #f77f00, #0057b8);
       color: white;
+      padding: 18px 6%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .tagline {
+      font-size: 13px;
+      margin-top: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: white;
+      padding: 75px 20px;
       text-align: center;
-      padding: 40px 20px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 32px;
+    .hero h1 {
+      color: #0057b8;
+      font-size: 42px;
+      margin-bottom: 10px;
     }
 
-    header p {
+    .hero .slogan {
+      color: #e85d04;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin: auto;
       font-size: 18px;
-      margin-top: 10px;
+      color: #555;
+    }
+
+    .buttons {
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 5px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+
+    .btn-primary {
+      background: #0057b8;
+    }
+
+    .btn-orange {
+      background: #e85d04;
+    }
+
+    section {
+      padding: 55px 6%;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
-      padding: 30px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #0057b8;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .about {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
     }
 
     .card {
       background: white;
-      margin: 20px 0;
       padding: 25px;
       border-radius: 12px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+      border-top: 5px solid #e85d04;
+      transition: transform 0.2s;
     }
 
-    h2 {
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
       color: #0057b8;
+      margin-bottom: 10px;
     }
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
+    .icon {
+      font-size: 34px;
+      margin-bottom: 10px;
     }
 
-    .service {
-      background: #fff3e6;
-      padding: 20px;
-      border-radius: 10px;
-      border-left: 5px solid #e85d04;
+    .branch {
+      border-top: 5px solid #0057b8;
+    }
+
+    .branch h3 {
+      color: #e85d04;
+    }
+
+    .contact {
+      background: linear-gradient(135deg, #0057b8, #003d82);
+      color: white;
+      text-align: center;
+    }
+
+    .contact .section-title {
+      color: white;
+    }
+
+    .contact-box {
+      background: white;
+      color: #222;
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .contact-box p {
+      margin: 10px 0;
     }
 
     footer {
-      background: #222;
+      background: #171717;
       color: white;
       text-align: center;
-      padding: 25px;
-      margin-top: 30px;
+      padding: 25px 15px;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        position: relative;
+      }
+
+      .nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 7px;
+      }
+
+      .hero h1 {
+        font-size: 31px;
+      }
+
+      .hero .slogan {
+        font-size: 20px;
+      }
+
+      section {
+        padding: 40px 5%;
+      }
     }
   </style>
 </head>
@@ -73,72 +238,248 @@
 <body>
 
 <header>
-  <h1>Swarayee Comps And Infotech</h1>
-  <p>ज्ञानदीपः प्रगतये</p>
-  <p>Digital • Education • Banking • Government Services</p>
+  <div class="nav">
+    <div>
+      <div class="logo">Swarayee Comps And Infotech</div>
+      <div class="tagline">ज्ञानदीपः प्रगतये</div>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#courses">Courses</a>
+      <a href="#branches">Branches</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<div class="container">
+<section class="hero" id="home">
+  <h1>Swarayee Comps And Infotech</h1>
 
-  <div class="card">
-    <h2>स्वराई कॉम्प्स ॲण्ड इन्फोटेक</h2>
-    <p>
-      आपल्या परिसरातील शिक्षण, डिजिटल सेवा, बँकिंग सेवा
-      आणि विविध ऑनलाइन सुविधा एकाच ठिकाणी उपलब्ध करून देण्यासाठी
-      Swarayee Comps And Infotech कार्यरत आहे.
-    </p>
+  <div class="slogan">
+    ज्ञानदीपः प्रगतये
   </div>
 
-  <div class="card">
-    <h2>आमच्या सेवा</h2>
+  <p>
+    Education • Digital Services • Banking • Courier • Printing •
+    Government & Business Services
+  </p>
 
-    <div class="services">
+  <div class="buttons">
+    <a class="btn btn-primary" href="#services">Our Services</a>
+    <a class="btn btn-orange" href="#contact">Contact Us</a>
+  </div>
+</section>
 
-      <div class="service">
-        <h3>💻 Computer Education</h3>
-        <p>MS-CIT, Tally, Typing, Basic Computer आणि इतर डिजिटल प्रशिक्षण.</p>
+<section id="about">
+  <div class="container">
+
+    <h2 class="section-title">About Us</h2>
+
+    <div class="about">
+      <p>
+        <strong>Swarayee Comps And Infotech</strong> ही शिक्षण,
+        डिजिटल सेवा, बँकिंग सेवा, कुरिअर, प्रिंटिंग आणि विविध
+        व्यावसायिक व शासकीय सेवा उपलब्ध करून देणारी संस्था आहे.
+      </p>
+
+      <br>
+
+      <p>
+        ग्रामीण व निमशहरी भागातील नागरिक, विद्यार्थी, उद्योजक आणि
+        व्यवसायांना आवश्यक डिजिटल व कौशल्याधारित सेवा
+        एकाच ठिकाणी उपलब्ध करून देणे हा आमचा उद्देश आहे.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>Computer Education</h3>
+        <p>
+          MS-CIT, Tally, Typing, Basic Computer आणि
+          इतर संगणक व डिजिटल कौशल्य प्रशिक्षण.
+        </p>
       </div>
 
-      <div class="service">
-        <h3>🏦 Banking Services</h3>
-        <p>Banking Correspondent व विविध बँकिंग सेवा.</p>
+      <div class="card">
+        <div class="icon">🏦</div>
+        <h3>Banking Services</h3>
+        <p>
+          विविध बँकिंग व ग्राहक सेवा सुविधा.
+        </p>
       </div>
 
-      <div class="service">
-        <h3>📄 Digital Services</h3>
-        <p>PAN, Udyam, Online Applications, Certificates आणि इतर ऑनलाइन सेवा.</p>
+      <div class="card">
+        <div class="icon">📄</div>
+        <h3>Digital Services</h3>
+        <p>
+          PAN, Udyam, Online Applications, Certificates
+          आणि विविध डिजिटल सेवा.
+        </p>
       </div>
 
-      <div class="service">
-        <h3>📦 Courier Services</h3>
-        <p>Courier booking व delivery सुविधा.</p>
+      <div class="card">
+        <div class="icon">📦</div>
+        <h3>Courier Services</h3>
+        <p>
+          देशांतर्गत व आंतरराष्ट्रीय कुरिअर
+          बुकिंग व संबंधित सेवा.
+        </p>
       </div>
 
-      <div class="service">
-        <h3>🖨️ Printing Services</h3>
-        <p>Xerox, Printing, Scanning, Lamination, Banner व इतर सेवा.</p>
+      <div class="card">
+        <div class="icon">🖨️</div>
+        <h3>Printing & Xerox</h3>
+        <p>
+          Xerox, Printing, Scanning, Lamination,
+          Banner आणि इतर प्रिंटिंग सेवा.
+        </p>
       </div>
 
-      <div class="service">
-        <h3>🏢 Government Services</h3>
-        <p>शासकीय योजना, डिजिटल सेवा आणि प्रकल्पांसाठी सहाय्य.</p>
+      <div class="card">
+        <div class="icon">🏢</div>
+        <h3>Government & Business Services</h3>
+        <p>
+          शासकीय योजना, ऑनलाइन प्रक्रिया,
+          व्यवसाय सेवा आणि प्रकल्प सहाय्य.
+        </p>
       </div>
 
     </div>
+
+  </div>
+</section>
+
+<section id="courses">
+  <div class="container">
+
+    <h2 class="section-title">Our Courses</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>MS-CIT</h3>
+        <p>Digital literacy आणि computer education course.</p>
+      </div>
+
+      <div class="card">
+        <h3>Tally</h3>
+        <p>Accounting आणि business software training.</p>
+      </div>
+
+      <div class="card">
+        <h3>Typing</h3>
+        <p>Marathi आणि English typing training.</p>
+      </div>
+
+      <div class="card">
+        <h3>Basic Computer</h3>
+        <p>Computer fundamentals आणि digital skills.</p>
+      </div>
+
+      <div class="card">
+        <h3>BFSI</h3>
+        <p>Banking, Financial Services आणि Insurance related training.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="branches">
+  <div class="container">
+
+    <h2 class="section-title">Our Branches</h2>
+
+    <div class="cards">
+
+      <div class="card branch">
+        <h3>Undale Branch</h3>
+        <p>
+          Near & Opp. Bachpan Play School,<br>
+          Undale, Tal. Karad,<br>
+          Dist. Satara – 415111
+        </p>
+      </div>
+
+      <div class="card branch">
+        <h3>Ghogaon Branch</h3>
+        <p>
+          Near Gurukul School,<br>
+          Ghogaon, Tal. Karad,<br>
+          Dist. Satara – 415111
+        </p>
+      </div>
+
+      <div class="card branch">
+        <h3>Dabhole Bk Branch</h3>
+        <p>
+          Lanja Phata Main Stop,<br>
+          Tal. Sangameshwar,<br>
+          Dist. Ratnagiri – 415803
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-box">
+
+      <p>
+        <strong>Swarayee Comps And Infotech</strong>
+      </p>
+
+      <p>
+        Education • Digital • Banking • Courier • Business Services
+      </p>
+
+      <p>
+        🌐 swarayeeinfotech.com
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-primary" href="tel:+919421391077">
+          📞 Call Us
+        </a>
+
+        <a class="btn btn-orange"
+           href="https://wa.me/919421391077"
+           target="_blank">
+          💬 WhatsApp
+        </a>
+      </div>
+
+    </div>
+
   </div>
 
-  <div class="card">
-    <h2>संपर्क</h2>
-    <p><strong>Undale Office:</strong> Bachpan School जवळ, Undale</p>
-    <p><strong>Ghogaon Office:</strong> Gurukul School जवळ, Ghogaon, Tal. Karad, Dist. Satara</p>
-    <p><strong>Website:</strong> swarayeeinfotech.com</p>
-  </div>
-
-</div>
+</section>
 
 <footer>
-  <p>© 2026 Swarayee Comps And Infotech. All Rights Reserved.</p>
+  <p><strong>Swarayee Comps And Infotech</strong></p>
   <p>ज्ञानदीपः प्रगतये</p>
+  <p>© 2026 All Rights Reserved.</p>
 </footer>
 
 </body>
