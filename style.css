@@ -1,0 +1,65 @@
+:root{
+  --navy:#063b73;
+  --navy-dark:#03284f;
+  --blue:#0b5aa6;
+  --orange:#f28a00;
+  --orange-dark:#d86f00;
+  --ink:#17253a;
+  --muted:#607089;
+  --white:#fff;
+  --soft:#f3f7fb;
+  --border:#dce7f2;
+  --shadow:0 14px 35px rgba(3,40,79,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--ink);background:var(--white);line-height:1.65}
+.container{width:min(1120px,92%);margin:auto}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(3,40,79,.97);box-shadow:0 4px 18px rgba(0,0,0,.12)}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;min-height:78px;gap:20px}
+.brand img{display:block;width:190px;height:auto;background:#fff;border-radius:7px}
+nav{display:flex;align-items:center;gap:8px}
+nav a{color:#fff;text-decoration:none;padding:10px 13px;border-radius:7px;font-weight:700}
+nav a:hover{background:var(--orange);color:#fff}
+.menu-btn{display:none;background:none;border:0;color:#fff;font-size:28px}
+.hero{background:linear-gradient(135deg,#f7fbff 0%,#fff 55%,#fff5e8 100%);padding:85px 0 70px;border-bottom:1px solid var(--border)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px}
+.eyebrow{display:inline-block;color:var(--orange-dark);font-weight:800;letter-spacing:1.2px}
+h1{font-size:clamp(40px,6vw,72px);line-height:1.05;margin:14px 0;color:var(--navy-dark)}
+h1 span{display:block;color:var(--orange)}
+.lead{font-size:20px;color:var(--navy);font-weight:700}
+.hero-card{background:#fff;padding:25px;border-radius:24px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.hero-card img{width:100%;display:block}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-block;text-decoration:none;padding:12px 22px;border-radius:8px;font-weight:800;border:2px solid transparent}
+.btn-orange{background:var(--orange);color:#fff}.btn-orange:hover{background:var(--orange-dark)}
+.btn-outline{border-color:var(--navy);color:var(--navy)}.btn-outline:hover{background:var(--navy);color:#fff}
+.btn-light{background:#fff;color:var(--navy);border-color:#fff}
+.section{padding:78px 0}.soft{background:var(--soft)}
+.section-title{display:flex;align-items:center;gap:14px;margin-bottom:32px}
+.section-title span{color:var(--orange);font-weight:900}.section-title h2{margin:0;color:var(--navy-dark);font-size:34px}
+.about-box{max-width:900px;font-size:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card,.course,.branch{background:#fff;border:1px solid var(--border);border-radius:15px;padding:25px;box-shadow:0 6px 20px rgba(3,40,79,.06)}
+.card{border-top:4px solid var(--orange)}
+.icon{font-size:34px}.card h3,.course h3,.branch h3{color:var(--navy);margin:10px 0}
+.course-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.course b{font-size:30px}.course{border-bottom:4px solid var(--navy)}
+.branch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.contact{background:var(--navy-dark);color:#fff;padding:70px 0}
+.contact h2{font-size:40px;margin:8px 0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px}
+.contact-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);padding:28px;border-radius:16px}
+.contact-card strong{font-size:25px}
+footer{background:#021d38;color:#fff;padding:25px 0}
+.footer-wrap{display:flex;align-items:center;gap:20px}.footer-wrap img{width:130px;background:#fff;border-radius:5px}
+footer small{opacity:.7}
+@media(max-width:850px){
+  nav{display:none;position:absolute;top:78px;left:0;right:0;background:var(--navy-dark);padding:12px;flex-direction:column}
+  nav.open{display:flex}nav a{width:100%;text-align:center}.menu-btn{display:block}
+  .hero-grid,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.course-grid{grid-template-columns:1fr 1fr}.branch-grid{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+  .brand img{width:155px}.hero{padding:55px 0}.section{padding:55px 0}
+  .cards,.course-grid{grid-template-columns:1fr}h1{font-size:43px}.contact h2{font-size:32px}
+  .footer-wrap{align-items:flex-start}.footer-wrap img{width:105px}
+}
