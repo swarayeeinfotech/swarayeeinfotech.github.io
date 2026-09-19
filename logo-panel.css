@@ -1,0 +1,19 @@
+/* Professional original-logo panel */
+.brand{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:220px;
+  height:92px;
+  padding:8px 16px;
+  background:#fff;
+  border-radius:0 0 28px 28px;
+  box-shadow:0 5px 18px rgba(3,40,79,.16);
+  flex:0 0 auto;
+}
+.brand img{
+  width:190px;
+  height:auto;
+  display:block;
+  object-fit:contain;
+}
