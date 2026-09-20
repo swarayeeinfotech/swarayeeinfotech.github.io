@@ -155,3 +155,205 @@ footer small{opacity:.7}
         text-align: justify;
         line-height: 1.7;
     }
+/* =========================================
+   SWARAYEE - PROFESSIONAL ABOUT US
+   ========================================= */
+
+#about {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#about .section-title {
+    margin-bottom: 40px;
+}
+
+#about .section-title h2 {
+    margin-bottom: 10px;
+}
+
+#about .section-title p {
+    margin-bottom: 0;
+}
+
+#about .about-text p {
+    text-align: justify;
+    line-height: 1.85;
+    margin-bottom: 18px;
+}
+
+#about .about-text h3 {
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+#about .about-grid {
+    align-items: stretch;
+}
+
+#about .about-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#about .info-box {
+    padding: 24px;
+    border-radius: 12px;
+    background: #f8f9fa;
+    border: 1px solid #e5e5e5;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#about .info-box h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#about .info-box p {
+    margin-bottom: 0;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+#about .about-journey {
+    margin-top: 45px;
+    padding: 30px;
+    border-radius: 12px;
+    background: #f8f9fa;
+    border: 1px solid #e5e5e5;
+}
+
+#about .about-journey h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+#about .journey-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#about .journey-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+#about .journey-item strong {
+    min-width: 180px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+#about .journey-item span {
+    flex: 1;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+#about .about-mission {
+    margin-top: 45px;
+    padding: 30px;
+    border-radius: 12px;
+    background: #f8f9fa;
+    border: 1px solid #e5e5e5;
+}
+
+#about .about-mission h3 {
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+#about .about-mission h3:first-child {
+    margin-top: 0;
+}
+
+#about .about-mission p {
+    margin-bottom: 15px;
+    line-height: 1.85;
+    text-align: justify;
+}
+
+@media (max-width: 900px) {
+
+    #about .about-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #about .journey-item {
+        gap: 15px;
+    }
+
+    #about .journey-item strong {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #about {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #about .about-grid {
+        display: block;
+    }
+
+    #about .about-text {
+        margin-bottom: 30px;
+    }
+
+    #about .about-boxes {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    #about .info-box {
+        padding: 20px;
+    }
+    #about .about-journey {
+        margin-top: 30px;
+        padding: 20px;
+    }
+    #about .journey-item {
+        display: block;
+        padding: 16px 0;
+    }
+    #about .journey-item strong {
+        display: block;
+        min-width: auto;
+        margin-bottom: 7px;
+    }
+    #about .journey-item span {
+        display: block;
+        text-align: justify;
+    }
+    #about .about-mission {
+        margin-top: 30px;
+        padding: 20px;
+    }
+    #about .about-text p,
+    #about .info-box p,
+    #about .journey-item span,
+    #about .about-mission p {
+        text-align: justify;
+        line-height: 1.75;
+    }
+@media (max-width: 480px) {
+    #about .section-title {
+        margin-bottom: 30px;
+    }
+    #about .about-text h3 {
+        font-size: 22px;
+    }
+    #about .about-journey,
+    #about .about-mission {
+        padding: 18px;
+    }
+    #about .info-box {
+        padding: 18px;
+    }
