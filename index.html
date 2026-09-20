@@ -483,7 +483,9 @@ footer{
         grid-template-columns:1fr;
     }
 }
-</style>
+#centers{
+    scroll-margin-top:90px;
+}</style>
 </head>
 
 <body>
@@ -505,7 +507,7 @@ footer{
         <a href="#about">About</a>
         <a href="#courses">Courses</a>
         <a href="#services">Services</a>
-        <a href="#centers">Centers</a>
+        <a href="#centers" onclick="document.getElementById('centers').scrollIntoView({behavior:'smooth'}); return false;">Centers</a>
         <a href="#contact">Contact</a>
     </nav>
 
