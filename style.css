@@ -125,3 +125,33 @@ footer small{opacity:.7}
     .about-mission {
         padding: 20px;
     }
+/* About Us - Justify Alignment */
+
+#about .about-text p,
+#about .about-mission p,
+#about .journey-item span {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Headings centered/left as appropriate */
+#about .about-text h3,
+#about .about-journey h3,
+#about .about-mission h3 {
+    text-align: left;
+}
+
+/* Journey section */
+#about .journey-item {
+    text-align: justify;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    #about .about-text p,
+    #about .about-mission p,
+    #about .journey-item span {
+        text-align: justify;
+        line-height: 1.7;
+    }
