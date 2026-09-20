@@ -1350,5 +1350,42 @@ footer{
     ☎
 </a>
 
+<script>
+/* =====================================
+   SWARAYEE GA4 BUSINESS EVENT TRACKING
+===================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* WhatsApp clicks */
+    document.querySelectorAll('a[href*="wa.me"]').forEach(function (link) {
+        link.addEventListener("click", function () {
+            gtag("event", "whatsapp_click", {
+                button_name: "WhatsApp"
+            });
+        });
+    });
+
+    /* Phone / Call clicks */
+    document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+        link.addEventListener("click", function () {
+            gtag("event", "call_click", {
+                button_name: "Call"
+            });
+        });
+    });
+
+    /* Google Maps clicks */
+    document.querySelectorAll('a[href*="google.com/maps"]').forEach(function (link) {
+        link.addEventListener("click", function () {
+            gtag("event", "maps_click", {
+                button_name: "Google Maps"
+            });
+        });
+    });
+
+});
+</script>
+
 </body>
 </html>
