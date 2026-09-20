@@ -59,3 +59,69 @@ footer small{opacity:.7}
   .cards,.course-grid{grid-template-columns:1fr}h1{font-size:43px}.contact h2{font-size:32px}
   .footer-wrap{align-items:flex-start}.footer-wrap img{width:105px}
 }
+/* ================================
+   SWARAYEE - ABOUT US SECTION
+   ================================ */
+
+.about-journey {
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 12px;
+    background: #f8f9fa;
+}
+
+.about-journey h3,
+.about-mission h3 {
+    margin-bottom: 15px;
+}
+
+.journey-item {
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.journey-item:last-child {
+    border-bottom: none;
+}
+
+.journey-item strong {
+    min-width: 150px;
+}
+
+.journey-item span {
+    flex: 1;
+}
+
+.about-mission {
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 12px;
+    background: #f8f9fa;
+}
+
+.about-mission h3 {
+    margin-top: 20px;
+}
+
+.about-mission h3:first-child {
+    margin-top: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .journey-item {
+        display: block;
+    }
+
+    .journey-item strong {
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    .about-journey,
+    .about-mission {
+        padding: 20px;
+    }
