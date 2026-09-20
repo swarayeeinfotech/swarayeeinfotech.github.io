@@ -4,15 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Swarayee Comps & Infotech | Education, Digital & Business Services</title>
+  <title>Swarayee Comps & Infotech | Education & Digital Services</title>
 
-  <meta name="description" content="Swarayee Comps & Infotech - Computer Education, KLiC, MS-CIT, Tally, Typing, Digital Services, Banking, Courier, Printing and Business Services.">
+  <meta name="description"
+    content="Swarayee Comps & Infotech - Computer Education, MS-CIT, KLiC, Tally, Typing, DTP, AutoCAD, Digital Services, Rubber Stamp, Pre-Inked Stamp, Business Support and NPAV Authorised Distributor.">
+
+  <meta name="keywords"
+    content="Swarayee Infotech, MS-CIT, KLiC, Tally, Typing, DTP, AutoCAD, Rubber Stamp, Pre-Inked Stamp, NPAV Authorised Distributor, Karad, Satara, Ratnagiri">
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
       scroll-behavior: smooth;
     }
 
@@ -25,26 +29,25 @@
 
     a {
       text-decoration: none;
-      color: inherit;
     }
 
-    .sw-container {
+    .container {
       width: 92%;
       max-width: 1200px;
       margin: auto;
     }
 
     /* HEADER */
-    .sw-header {
+    header {
       position: sticky;
       top: 0;
-      z-index: 1000;
-      background: rgba(255,255,255,0.97);
+      z-index: 999;
+      background: #ffffff;
       border-bottom: 1px solid #e5e7eb;
-      box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+      box-shadow: 0 3px 15px rgba(0,0,0,.07);
     }
 
-    .sw-nav {
+    .navbar {
       min-height: 82px;
       display: flex;
       align-items: center;
@@ -52,386 +55,423 @@
       gap: 20px;
     }
 
-    .sw-brand {
+    .brand {
       display: flex;
       align-items: center;
       gap: 12px;
     }
 
-    .sw-brand img {
-      width: 62px;
-      height: 62px;
+    .brand img {
+      width: 58px;
+      height: 58px;
       object-fit: contain;
       border-radius: 8px;
     }
 
-    .sw-brand-text strong {
-      display: block;
-      font-size: 20px;
-      letter-spacing: 1px;
-      color: #102a43;
+    .brand-text h2 {
+      font-size: 19px;
+      color: #12345b;
+      letter-spacing: .5px;
     }
 
-    .sw-brand-text span {
-      font-size: 12px;
+    .brand-text p {
+      font-size: 11px;
       color: #64748b;
     }
 
-    .sw-menu {
+    nav {
       display: flex;
+      gap: 24px;
       align-items: center;
-      gap: 25px;
     }
 
-    .sw-menu a {
+    nav a {
+      color: #334155;
       font-size: 15px;
       font-weight: 600;
-      color: #334155;
-      transition: 0.25s;
     }
 
-    .sw-menu a:hover {
+    nav a:hover {
       color: #0b63ce;
     }
 
-    .sw-menu-btn {
+    .menu-btn {
       display: none;
-      border: 0;
+      border: none;
       background: #0b63ce;
       color: white;
-      font-size: 24px;
-      padding: 6px 12px;
+      padding: 8px 12px;
+      font-size: 22px;
       border-radius: 7px;
       cursor: pointer;
     }
 
     /* HERO */
-    .sw-hero {
+    .hero {
       background:
-        linear-gradient(135deg, rgba(8,35,70,0.95), rgba(8,99,206,0.82)),
+        linear-gradient(120deg, rgba(5,30,65,.95), rgba(9,99,206,.82)),
         url("logo-professional-panel.jpg") center/cover no-repeat;
       color: white;
-      padding: 100px 0;
+      padding: 95px 0;
     }
 
-    .sw-hero-grid {
+    .hero-grid {
       display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
-      align-items: center;
+      grid-template-columns: 1.25fr .75fr;
       gap: 50px;
+      align-items: center;
     }
 
-    .sw-badge {
+    .tag {
       display: inline-block;
-      background: rgba(255,255,255,0.14);
-      border: 1px solid rgba(255,255,255,0.25);
+      border: 1px solid rgba(255,255,255,.3);
+      background: rgba(255,255,255,.12);
       padding: 7px 16px;
       border-radius: 30px;
-      font-size: 14px;
       margin-bottom: 18px;
+      font-size: 14px;
     }
 
-    .sw-hero h1 {
-      font-size: clamp(38px, 6vw, 68px);
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 65px);
       line-height: 1.08;
       margin-bottom: 20px;
     }
 
-    .sw-hero h1 span {
+    .hero h1 span {
       color: #ffd166;
     }
 
-    .sw-hero p {
+    .hero p {
       font-size: 19px;
       max-width: 720px;
-      color: #e5efff;
+      color: #e6efff;
       margin-bottom: 28px;
     }
 
-    .sw-buttons {
+    .buttons {
       display: flex;
+      gap: 12px;
       flex-wrap: wrap;
-      gap: 14px;
     }
 
-    .sw-btn {
+    .btn {
       display: inline-block;
       padding: 13px 23px;
       border-radius: 8px;
-      font-weight: 700;
-      transition: 0.25s;
+      font-weight: bold;
+      transition: .2s;
     }
 
-    .sw-btn-primary {
-      background: #ffd166;
-      color: #162033;
-    }
-
-    .sw-btn-primary:hover {
+    .btn:hover {
       transform: translateY(-2px);
     }
 
-    .sw-btn-light {
+    .btn-primary {
+      background: #ffd166;
+      color: #182235;
+    }
+
+    .btn-outline {
       border: 1px solid white;
       color: white;
     }
 
-    .sw-btn-light:hover {
+    .btn-outline:hover {
       background: white;
       color: #12345b;
     }
 
-    .sw-hero-logo {
-      display: flex;
-      justify-content: center;
+    .btn-whatsapp {
+      background: #25d366;
+      color: white;
     }
 
-    .sw-hero-logo img {
-      width: min(330px, 80%);
-      background: rgba(255,255,255,0.96);
-      padding: 22px;
+    .hero-logo {
+      text-align: center;
+    }
+
+    .hero-logo img {
+      width: 280px;
+      max-width: 90%;
+      background: white;
+      padding: 20px;
       border-radius: 20px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+      box-shadow: 0 20px 50px rgba(0,0,0,.25);
     }
 
     /* SECTIONS */
-    .sw-section {
-      padding: 80px 0;
+    section {
+      padding: 75px 0;
     }
 
-    .sw-section-light {
-      background: #f7f9fc;
+    .light {
+      background: #f6f9fc;
     }
 
-    .sw-title {
+    .section-title {
       text-align: center;
       margin-bottom: 45px;
     }
 
-    .sw-title small {
+    .section-title small {
       color: #0b63ce;
-      font-weight: 800;
+      font-weight: bold;
       letter-spacing: 2px;
     }
 
-    .sw-title h2 {
-      font-size: 38px;
+    .section-title h2 {
+      font-size: 36px;
       color: #102a43;
       margin-top: 5px;
     }
 
-    .sw-title p {
-      max-width: 700px;
-      margin: 10px auto 0;
+    .section-title p {
+      max-width: 720px;
+      margin: 10px auto;
       color: #64748b;
     }
 
     /* ABOUT */
-    .sw-about {
+    .about {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 45px;
       align-items: center;
     }
 
-    .sw-about h3 {
+    .about h3 {
       font-size: 30px;
       color: #102a43;
       margin-bottom: 15px;
     }
 
-    .sw-about p {
+    .about p {
       color: #526174;
-      margin-bottom: 15px;
+      margin-bottom: 14px;
     }
 
-    .sw-points {
+    .about-boxes {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 15px;
     }
 
-    .sw-point {
-      padding: 18px;
+    .about-box {
       background: white;
-      border-radius: 12px;
       border: 1px solid #e5eaf0;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.04);
     }
 
-    .sw-point strong {
+    .about-box strong {
       display: block;
       color: #0b63ce;
       margin-bottom: 5px;
     }
 
     /* CARDS */
-    .sw-grid {
+    .cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3,1fr);
       gap: 22px;
     }
 
-    .sw-card {
+    .card {
       background: white;
-      border: 1px solid #e5eaf0;
+      border: 1px solid #e4e9ef;
       border-radius: 15px;
       padding: 28px;
-      transition: 0.25s;
-      box-shadow: 0 7px 25px rgba(0,0,0,0.04);
+      box-shadow: 0 7px 25px rgba(0,0,0,.04);
+      transition: .25s;
     }
 
-    .sw-card:hover {
+    .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(0,0,0,0.10);
+      box-shadow: 0 15px 35px rgba(0,0,0,.10);
     }
 
-    .sw-icon {
+    .icon {
       font-size: 32px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
-    .sw-card h3 {
+    .card h3 {
       color: #102a43;
       margin-bottom: 8px;
       font-size: 21px;
     }
 
-    .sw-card p {
+    .card p {
       color: #64748b;
       font-size: 15px;
     }
 
-    /* COURSES */
-    .sw-course {
+    .course {
       border-top: 4px solid #0b63ce;
     }
 
-    .sw-course h3 {
-      color: #0b63ce;
+    /* AUTHORISED */
+    .authorised-card {
+      border-top: 4px solid #1f8f45;
+      background: linear-gradient(135deg,#ffffff,#f4fff7);
     }
 
-    /* BRANCHES */
-    .sw-branch {
-      border-left: 5px solid #0b63ce;
+    .authorised-card h3 {
+      color: #176b35;
     }
 
-    .sw-branch h3 {
-      color: #102a43;
-      margin-bottom: 10px;
+    .code {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 13px;
+      border-radius: 7px;
+      background: #e9f8ee;
+      color: #176b35;
+      font-weight: bold;
     }
 
-    .sw-branch p {
-      color: #64748b;
+    /* STAMP */
+    .stamp-card {
+      border-top: 4px solid #8b5cf6;
+    }
+
+    .stamp-card h3 {
+      color: #5b21b6;
     }
 
     /* WHY */
-    .sw-why {
+    .why {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4,1fr);
       gap: 20px;
+    }
+
+    .why-box {
       text-align: center;
-    }
-
-    .sw-why-box {
-      padding: 25px 15px;
       background: white;
-      border-radius: 14px;
       border: 1px solid #e5eaf0;
+      border-radius: 14px;
+      padding: 25px 15px;
     }
 
-    .sw-why-box strong {
+    .why-box strong {
       display: block;
-      font-size: 17px;
       color: #102a43;
       margin-top: 8px;
     }
 
-    /* CONTACT */
-    .sw-contact {
-      background: linear-gradient(135deg, #092c54, #0b63ce);
-      color: white;
-      padding: 75px 0;
+    /* CENTERS */
+    .center-card {
+      border-top: 4px solid #0b63ce;
     }
 
-    .sw-contact-grid {
+    .center-card h3 {
+      color: #102a43;
+      margin-bottom: 12px;
+    }
+
+    .center-card p {
+      color: #526174;
+      margin-bottom: 15px;
+    }
+
+    .map-btn {
+      display: inline-block;
+      background: #eef5ff;
+      color: #0b63ce;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: linear-gradient(135deg,#092c54,#0b63ce);
+      color: white;
+    }
+
+    .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 40px;
       align-items: center;
     }
 
-    .sw-contact h2 {
+    .contact h2 {
       font-size: 42px;
-      margin-bottom: 12px;
+      margin-bottom: 15px;
     }
 
-    .sw-contact p {
+    .contact-description {
       color: #dcecff;
       font-size: 17px;
     }
 
-    .sw-contact-card {
+    .contact-card {
       background: white;
       color: #172033;
-      padding: 30px;
       border-radius: 16px;
-      box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+      padding: 30px;
+      box-shadow: 0 15px 45px rgba(0,0,0,.2);
     }
 
-    .sw-contact-card h3 {
-      margin-bottom: 12px;
+    .contact-card h3 {
       color: #102a43;
+      margin-bottom: 18px;
     }
 
-    .sw-phone {
-      font-size: 24px;
-      font-weight: 800;
+    .contact-number {
+      margin: 12px 0;
+      font-size: 18px;
+      font-weight: bold;
       color: #0b63ce;
-      margin-bottom: 20px;
+    }
+
+    .contact-number a {
+      color: #0b63ce;
+    }
+
+    .contact-label {
+      color: #64748b;
+      font-size: 14px;
+      font-weight: bold;
     }
 
     /* FOOTER */
-    .sw-footer {
+    footer {
       background: #071a30;
       color: #cbd5e1;
       padding: 35px 0;
+      text-align: center;
     }
 
-    .sw-footer-grid {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 25px;
-    }
-
-    .sw-footer-brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .sw-footer img {
+    footer img {
       width: 55px;
       height: 55px;
       object-fit: contain;
       background: white;
       border-radius: 7px;
+      margin-bottom: 8px;
     }
 
-    .sw-footer strong {
+    footer strong {
+      display: block;
       color: white;
+      font-size: 17px;
     }
 
-    .sw-footer small {
+    footer small {
       color: #94a3b8;
     }
 
-    /* FLOATING WHATSAPP */
-    .sw-whatsapp {
+    /* WHATSAPP */
+    .whatsapp {
       position: fixed;
-      right: 22px;
-      bottom: 22px;
+      right: 20px;
+      bottom: 20px;
       width: 58px;
       height: 58px;
       border-radius: 50%;
@@ -440,103 +480,98 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 29px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-      z-index: 2000;
+      font-size: 27px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.25);
+      z-index: 1000;
     }
 
     /* MOBILE */
-    @media (max-width: 900px) {
+    @media(max-width:900px) {
 
-      .sw-menu-btn {
+      .menu-btn {
         display: block;
       }
 
-      .sw-menu {
+      nav {
         position: absolute;
+        top: 82px;
         left: 0;
         right: 0;
-        top: 82px;
         background: white;
         display: none;
         flex-direction: column;
         align-items: stretch;
-        padding: 18px 6%;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        padding: 15px 6%;
+        box-shadow: 0 10px 25px rgba(0,0,0,.12);
       }
 
-      .sw-menu.open {
+      nav.show {
         display: flex;
       }
 
-      .sw-menu a {
+      nav a {
         padding: 10px 0;
         border-bottom: 1px solid #edf0f4;
       }
 
-      .sw-hero-grid,
-      .sw-about,
-      .sw-contact-grid {
+      .hero-grid,
+      .about,
+      .contact-grid {
         grid-template-columns: 1fr;
       }
 
-      .sw-grid {
+      .cards {
         grid-template-columns: 1fr 1fr;
       }
 
-      .sw-why {
+      .why {
         grid-template-columns: 1fr 1fr;
       }
 
-      .sw-hero {
-        padding: 70px 0;
-      }
-
-      .sw-hero-logo {
+      .hero-logo {
         order: -1;
       }
     }
 
-    @media (max-width: 600px) {
+    @media(max-width:600px) {
 
-      .sw-brand img {
+      .brand img {
         width: 50px;
         height: 50px;
       }
 
-      .sw-brand-text strong {
+      .brand-text h2 {
         font-size: 15px;
       }
 
-      .sw-brand-text span {
-        font-size: 10px;
+      .brand-text p {
+        font-size: 9px;
       }
 
-      .sw-section {
+      section {
         padding: 60px 0;
       }
 
-      .sw-grid,
-      .sw-points,
-      .sw-why {
+      .cards,
+      .about-boxes,
+      .why {
         grid-template-columns: 1fr;
       }
 
-      .sw-title h2 {
-        font-size: 30px;
+      .hero {
+        padding: 65px 0;
       }
 
-      .sw-hero h1 {
+      .hero h1 {
         font-size: 40px;
       }
 
-      .sw-contact h2 {
-        font-size: 32px;
+      .section-title h2 {
+        font-size: 30px;
       }
 
-      .sw-footer-grid {
-        flex-direction: column;
-        text-align: center;
+      .contact h2 {
+        font-size: 32px;
       }
     }
   </style>
@@ -544,26 +579,31 @@
 
 <body>
 
-<!-- HEADER -->
-<header class="sw-header">
-  <div class="sw-container sw-nav">
+<!-- ================= HEADER ================= -->
 
-    <a href="#home" class="sw-brand">
-      <img src="logo.jpg" alt="Swarayee Comps & Infotech Logo">
-      <div class="sw-brand-text">
-        <strong>SWARAYEE INFOTECH</strong>
-        <span>Swarayee Comps & Infotech</span>
+<header>
+  <div class="container navbar">
+
+    <a href="#home" class="brand">
+
+      <img src="logo.jpg"
+           alt="Swarayee Comps & Infotech Logo">
+
+      <div class="brand-text">
+        <h2>SWARAYEE INFOTECH</h2>
+        <p>Swarayee Comps & Infotech</p>
       </div>
+
     </a>
 
-    <button class="sw-menu-btn" onclick="toggleMenu()">☰</button>
+    <button class="menu-btn" onclick="openMenu()">☰</button>
 
-    <nav class="sw-menu" id="swMenu">
+    <nav id="menu">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#courses">Courses</a>
       <a href="#services">Services</a>
-      <a href="#branches">Centers</a>
+      <a href="#centers">Centers</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -571,12 +611,15 @@
 </header>
 
 
-<!-- HERO -->
-<section class="sw-hero" id="home">
-  <div class="sw-container sw-hero-grid">
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+  <div class="container hero-grid">
 
     <div>
-      <span class="sw-badge">ज्ञानदीपः प्रगतये</span>
+
+      <span class="tag">ज्ञानदीपः प्रगतये</span>
 
       <h1>
         Empowering Skills.<br>
@@ -584,349 +627,24 @@
       </h1>
 
       <p>
-        शिक्षण, डिजिटल सेवा, संगणक प्रशिक्षण, व्यवसायिक सेवा
-        आणि नागरिकांसाठी विविध आवश्यक सेवा — एकाच ठिकाणी.
+        शिक्षण, संगणक प्रशिक्षण, डिजिटल सेवा,
+        कौशल्य विकास आणि व्यवसायिक सेवांसाठी
+        Swarayee Comps & Infotech.
       </p>
 
-      <div class="sw-buttons">
-        <a href="#courses" class="sw-btn sw-btn-primary">
+      <div class="buttons">
+
+        <a href="#courses" class="btn btn-primary">
           Explore Courses
         </a>
 
-        <a href="#contact" class="sw-btn sw-btn-light">
+        <a href="#contact" class="btn btn-outline">
           Contact Us
         </a>
-      </div>
-    </div>
 
-    <div class="sw-hero-logo">
-      <img src="logo.jpg" alt="Swarayee Logo">
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ABOUT -->
-<section class="sw-section" id="about">
-  <div class="sw-container">
-
-    <div class="sw-title">
-      <small>ABOUT SWARAYEE</small>
-      <h2>आपल्या प्रगतीसाठी एक विश्वासू केंद्र</h2>
-      <p>
-        Education • Digital Services • Business Support • Citizen Services
-      </p>
-    </div>
-
-    <div class="sw-about">
-
-      <div>
-        <h3>Swarayee Comps & Infotech</h3>
-
-        <p>
-          Swarayee Comps & Infotech ही शिक्षण, संगणक प्रशिक्षण,
-          डिजिटल सेवा, व्यवसायिक सेवा, प्रिंटिंग, कुरिअर आणि
-          विविध नागरिक सेवा उपलब्ध करून देणारी संस्था आहे.
-        </p>
-
-        <p>
-          ग्रामीण व निमशहरी भागातील विद्यार्थी, नागरिक, उद्योजक
-          आणि व्यवसायांना आवश्यक कौशल्ये व सेवा त्यांच्या जवळ
-          उपलब्ध करून देणे हा आमचा उद्देश आहे.
-        </p>
-      </div>
-
-      <div class="sw-points">
-
-        <div class="sw-point">
-          <strong>🎓 Education</strong>
-          Computer & Skill Development
-        </div>
-
-        <div class="sw-point">
-          <strong>💻 Digital</strong>
-          Online & Digital Services
-        </div>
-
-        <div class="sw-point">
-          <strong>🏢 Business</strong>
-          Business Support Services
-        </div>
-
-        <div class="sw-point">
-          <strong>📍 Rural Reach</strong>
-          Services closer to citizens
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- COURSES -->
-<section class="sw-section sw-section-light" id="courses">
-  <div class="sw-container">
-
-    <div class="sw-title">
-      <small>COURSES</small>
-      <h2>Computer & Skill Development Courses</h2>
-      <p>
-        विद्यार्थ्यांसाठी व रोजगाराभिमुख कौशल्य विकासासाठी विविध courses.
-      </p>
-    </div>
-
-    <div class="sw-grid">
-
-      <div class="sw-card sw-course">
-        <div class="sw-icon">🎓</div>
-        <h3>MS-CIT</h3>
-        <p>
-          Computer literacy, digital skills आणि day-to-day computer usage.
-        </p>
-      </div>
-
-      <div class="sw-card sw-course">
-        <div class="sw-icon">💻</div>
-        <h3>KLiC Courses</h3>
-        <p>
-          विविध skill-based KLiC courses साठी प्रशिक्षण सुविधा.
-        </p>
-      </div>
-
-      <div class="sw-card sw-course">
-        <div class="sw-icon">📊</div>
-        <h3>Tally</h3>
-        <p>
-          Accounting आणि business software related training.
-        </p>
-      </div>
-
-      <div class="sw-card sw-course">
-        <div class="sw-icon">⌨️</div>
-        <h3>Typing</h3>
-        <p>
-          Marathi आणि English typing skill development.
-        </p>
-      </div>
-
-      <div class="sw-card sw-course">
-        <div class="sw-icon">🎨</div>
-        <h3>DTP</h3>
-        <p>
-          Document design, graphics आणि desktop publishing skills.
-        </p>
-      </div>
-
-      <div class="sw-card sw-course">
-        <div class="sw-icon">📐</div>
-        <h3>AutoCAD</h3>
-        <p>
-          Basic computer-aided design आणि drafting related training.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- SERVICES -->
-<section class="sw-section" id="services">
-  <div class="sw-container">
-
-    <div class="sw-title">
-      <small>SERVICES</small>
-      <h2>Our Services</h2>
-      <p>
-        दैनंदिन, डिजिटल, व्यवसायिक आणि नागरिकांच्या गरजांसाठी विविध सेवा.
-      </p>
-    </div>
-
-    <div class="sw-grid">
-
-      <div class="sw-card">
-        <div class="sw-icon">💻</div>
-        <h3>Digital Services</h3>
-        <p>
-          विविध online applications, digital documentation आणि citizen services.
-        </p>
-      </div>
-
-      <div class="sw-card">
-        <div class="sw-icon">🏦</div>
-        <h3>Banking Services</h3>
-        <p>
-          उपलब्धतेनुसार विविध banking आणि financial service support.
-        </p>
-      </div>
-
-      <div class="sw-card">
-        <div class="sw-icon">📄</div>
-        <h3>Online Applications</h3>
-        <p>
-          विविध online forms, applications आणि document related services.
-        </p>
-      </div>
-
-      <div class="sw-card">
-        <div class="sw-icon">📦</div>
-        <h3>Courier Services</h3>
-        <p>
-          Courier booking आणि संबंधित logistics support services.
-        </p>
-      </div>
-
-      <div class="sw-card">
-        <div class="sw-icon">🖨️</div>
-        <h3>Printing & Xerox</h3>
-        <p>
-          Printing, Xerox, Scanning, Lamination आणि document services.
-        </p>
-      </div>
-
-      <div class="sw-card">
-        <div class="sw-icon">🔖</div>
-        <h3>Stamp Services</h3>
-        <p>
-          Rubber Stamp, Pre-Ink Stamp आणि customized office stamp services.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- WHY SWARAYEE -->
-<section class="sw-section sw-section-light">
-  <div class="sw-container">
-
-    <div class="sw-title">
-      <small>WHY SWARAYEE</small>
-      <h2>Why Choose Us?</h2>
-    </div>
-
-    <div class="sw-why">
-
-      <div class="sw-why-box">
-        <div class="sw-icon">🎓</div>
-        <strong>Skill Development</strong>
-        Practical learning
-      </div>
-
-      <div class="sw-why-box">
-        <div class="sw-icon">📍</div>
-        <strong>Local Accessibility</strong>
-        Services near you
-      </div>
-
-      <div class="sw-why-box">
-        <div class="sw-icon">💼</div>
-        <strong>Business Support</strong>
-        Digital & business services
-      </div>
-
-      <div class="sw-why-box">
-        <div class="sw-icon">🤝</div>
-        <strong>Customer Focus</strong>
-        Helpful service approach
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- CENTERS -->
-<section class="sw-section" id="branches">
-  <div class="sw-container">
-
-    <div class="sw-title">
-      <small>OUR CENTERS</small>
-      <h2>Swarayee Centers</h2>
-      <p>
-        विविध ठिकाणी शिक्षण आणि सेवा पोहोचविण्याचा प्रयत्न.
-      </p>
-    </div>
-
-    <div class="sw-grid">
-
-      <div class="sw-card sw-branch">
-        <h3>📍 Undale Center</h3>
-        <p>
-          Near & Opp. Bachpan Play School,<br>
-          Undale, Tal. Karad,<br>
-          Dist. Satara, Maharashtra – 415111
-        </p>
-      </div>
-
-      <div class="sw-card sw-branch">
-        <h3>📍 Ghogaon Center</h3>
-        <p>
-          Near Gurukul School,<br>
-          Ghogaon, Tal. Karad,<br>
-          Dist. Satara, Maharashtra – 415111
-        </p>
-      </div>
-
-      <div class="sw-card sw-branch">
-        <h3>📍 Dabhole Bk. Center</h3>
-        <p>
-          Lanja Phata Main Stop,<br>
-          Tal. Sangameshwar,<br>
-          Dist. Ratnagiri, Maharashtra – 415803
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- CONTACT -->
-<section class="sw-contact" id="contact">
-  <div class="sw-container sw-contact-grid">
-
-    <div>
-      <span class="sw-badge">CONTACT SWARAYEE</span>
-
-      <h2>Let's Connect</h2>
-
-      <p>
-        Courses, admissions, digital services आणि इतर माहितीसाठी
-        आमच्याशी संपर्क साधा.
-      </p>
-    </div>
-
-    <div class="sw-contact-card">
-
-      <h3>Swarayee Comps & Infotech</h3>
-
-      <div class="sw-phone">
-        📞 9561298384
-      </div>
-
-      <div class="sw-buttons">
-
-        <a
-          class="sw-btn sw-btn-primary"
-          href="tel:+919561298384">
-          📞 Call Us
-        </a>
-
-        <a
-          class="sw-btn"
-          style="background:#25d366;color:white;"
-          href="https://wa.me/919561298384"
-          target="_blank">
+        <a href="https://wa.me/919561298384"
+           target="_blank"
+           class="btn btn-whatsapp">
           💬 WhatsApp
         </a>
 
@@ -934,39 +652,577 @@
 
     </div>
 
+    <div class="hero-logo">
+
+      <img src="logo.jpg"
+           alt="Swarayee Comps & Infotech">
+
+    </div>
+
   </div>
+
 </section>
 
 
-<!-- FOOTER -->
-<footer class="sw-footer">
+<!-- ================= ABOUT ================= -->
 
-  <div class="sw-container sw-footer-grid">
+<section id="about">
 
-    <div class="sw-footer-brand">
-      <img src="logo.jpg" alt="Swarayee Logo">
+  <div class="container">
+
+    <div class="section-title">
+
+      <small>ABOUT SWARAYEE</small>
+
+      <h2>आपल्या प्रगतीसाठी एक विश्वासू केंद्र</h2>
+
+      <p>
+        Education • Digital Services • Skill Development • Business Support
+      </p>
+
+    </div>
+
+
+    <div class="about">
 
       <div>
-        <strong>Swarayee Comps & Infotech</strong><br>
-        <span>ज्ञानदीपः प्रगतये</span><br>
-        <small>Education • Digital • Business Services</small>
+
+        <h3>Swarayee Comps & Infotech</h3>
+
+        <p>
+          Swarayee Comps & Infotech ही संगणक शिक्षण,
+          कौशल्य विकास, डिजिटल सेवा आणि विविध
+          व्यवसायिक सेवांसाठी कार्यरत संस्था आहे.
+        </p>
+
+        <p>
+          ग्रामीण आणि निमशहरी भागातील विद्यार्थी,
+          नागरिक, उद्योजक आणि व्यवसायांना आवश्यक
+          कौशल्ये व सेवा त्यांच्या जवळ उपलब्ध करून
+          देणे हा आमचा प्रयत्न आहे.
+        </p>
+
       </div>
+
+
+      <div class="about-boxes">
+
+        <div class="about-box">
+          <strong>🎓 Education</strong>
+          Computer & Skill Development
+        </div>
+
+        <div class="about-box">
+          <strong>💻 Digital</strong>
+          Digital & Online Services
+        </div>
+
+        <div class="about-box">
+          <strong>💼 Business</strong>
+          Business Support Services
+        </div>
+
+        <div class="about-box">
+          <strong>🤝 Support</strong>
+          Customer-focused Services
+        </div>
+
+      </div>
+
     </div>
 
-    <div>
-      <small>
-        © 2026 Swarayee Comps & Infotech. All Rights Reserved.
-      </small>
+  </div>
+
+</section>
+
+
+<!-- ================= COURSES ================= -->
+
+<section class="light" id="courses">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <small>COURSES</small>
+
+      <h2>Computer & Skill Development</h2>
+
+      <p>
+        रोजगाराभिमुख आणि कौशल्य विकासासाठी विविध संगणक प्रशिक्षण courses.
+      </p>
+
     </div>
+
+
+    <div class="cards">
+
+      <div class="card course">
+        <div class="icon">🎓</div>
+        <h3>MS-CIT</h3>
+        <p>
+          Computer literacy आणि digital skills साठी प्रशिक्षण.
+        </p>
+      </div>
+
+      <div class="card course">
+        <div class="icon">💻</div>
+        <h3>KLiC Courses</h3>
+        <p>
+          विविध skill-based KLiC courses साठी प्रशिक्षण सुविधा.
+        </p>
+      </div>
+
+      <div class="card course">
+        <div class="icon">📊</div>
+        <h3>Tally</h3>
+        <p>
+          Accounting आणि business software related training.
+        </p>
+      </div>
+
+      <div class="card course">
+        <div class="icon">⌨️</div>
+        <h3>Typing</h3>
+        <p>
+          Marathi आणि English typing skill development.
+        </p>
+      </div>
+
+      <div class="card course">
+        <div class="icon">🎨</div>
+        <h3>DTP</h3>
+        <p>
+          Document design आणि desktop publishing skills.
+        </p>
+      </div>
+
+      <div class="card course">
+        <div class="icon">📐</div>
+        <h3>AutoCAD</h3>
+        <p>
+          Computer-aided design आणि drafting related training.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <small>SERVICES</small>
+
+      <h2>Our Services</h2>
+
+      <p>
+        नागरिक, विद्यार्थी आणि व्यवसायांसाठी विविध डिजिटल व support services.
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>Digital Services</h3>
+        <p>
+          Online applications, digital documentation आणि citizen services.
+        </p>
+      </div>
+
+
+      <div class="card">
+        <div class="icon">🏦</div>
+        <h3>Banking Support</h3>
+        <p>
+          उपलब्ध सेवांनुसार banking आणि financial service support.
+        </p>
+      </div>
+
+
+      <div class="card">
+        <div class="icon">📄</div>
+        <h3>Online Applications</h3>
+        <p>
+          विविध online forms आणि application related services.
+        </p>
+      </div>
+
+
+      <div class="card">
+        <div class="icon">📦</div>
+        <h3>Courier Services</h3>
+        <p>
+          Courier booking आणि संबंधित service support.
+        </p>
+      </div>
+
+
+      <div class="card">
+        <div class="icon">🖨️</div>
+        <h3>Printing & Xerox</h3>
+        <p>
+          Printing, Xerox, Scanning आणि document services.
+        </p>
+      </div>
+
+
+      <div class="card stamp-card">
+        <div class="icon">🔖</div>
+        <h3>Rubber Stamp</h3>
+        <p>
+          Office, Business आणि Professional वापरासाठी
+          customized Rubber Stamp services.
+        </p>
+      </div>
+
+
+      <div class="card stamp-card">
+        <div class="icon">🖋️</div>
+        <h3>Pre-Inked Stamp</h3>
+        <p>
+          स्वच्छ आणि professional imprint साठी
+          customized Pre-Inked Stamp services.
+        </p>
+      </div>
+
+
+      <div class="card">
+        <div class="icon">📑</div>
+        <h3>Business Support</h3>
+        <p>
+          व्यवसायासाठी digital आणि documentation support services.
+        </p>
+      </div>
+
+
+      <!-- NPAV -->
+
+      <div class="card authorised-card">
+
+        <div class="icon">🛡️</div>
+
+        <h3>NPAV Authorised Distributor</h3>
+
+        <p>
+          Swarayee Comps & Infotech is an
+          <strong>NPAV Authorised Distributor</strong>.
+        </p>
+
+        <span class="code">
+          Distributor Code: Y-111
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= WHY ================= -->
+
+<section class="light">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <small>WHY SWARAYEE</small>
+
+      <h2>Why Choose Swarayee?</h2>
+
+    </div>
+
+
+    <div class="why">
+
+      <div class="why-box">
+        <div class="icon">🎓</div>
+        <strong>Skill Development</strong>
+        Practical Learning
+      </div>
+
+      <div class="why-box">
+        <div class="icon">📍</div>
+        <strong>Local Accessibility</strong>
+        Services Near You
+      </div>
+
+      <div class="why-box">
+        <div class="icon">💼</div>
+        <strong>Business Support</strong>
+        Digital Solutions
+      </div>
+
+      <div class="why-box">
+        <div class="icon">🤝</div>
+        <strong>Customer Focus</strong>
+        Helpful Service
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CENTERS ================= -->
+
+<section id="centers">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <small>OUR CENTERS</small>
+
+      <h2>Swarayee Training & Service Centers</h2>
+
+      <p>
+        विविध भागांमध्ये शिक्षण आणि डिजिटल सेवा उपलब्ध करून देण्याचा प्रयत्न.
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+      <!-- UNDALE -->
+
+      <div class="card center-card">
+
+        <div class="icon">📍</div>
+
+        <h3>Branch – Undale</h3>
+
+        <p>
+          Opp. Bachpan Play School,<br>
+          Undale, Tal. Karad,<br>
+          Dist. Satara, Maharashtra – 415111
+        </p>
+
+        <a
+          class="map-btn"
+          href="https://www.google.com/maps/search/?api=1&query=Opp.+Bachpan+Play+School,+Undale,+Karad,+Satara,+Maharashtra+415111"
+          target="_blank">
+          📍 View Location
+        </a>
+
+      </div>
+
+
+      <!-- GHOGAON -->
+
+      <div class="card center-card">
+
+        <div class="icon">📍</div>
+
+        <h3>Branch – Ghogaon</h3>
+
+        <p>
+          Near Gurukul School,<br>
+          Ghogaon, Tal. Karad,<br>
+          Dist. Satara, Maharashtra – 415111
+        </p>
+
+        <a
+          class="map-btn"
+          href="https://www.google.com/maps/search/?api=1&query=Near+Gurukul+School,+Ghogaon,+Karad,+Satara,+Maharashtra+415111"
+          target="_blank">
+          📍 View Location
+        </a>
+
+      </div>
+
+
+      <!-- DABHOLE -->
+
+      <div class="card center-card">
+
+        <div class="icon">📍</div>
+
+        <h3>Branch – Dabhole Bk.</h3>
+
+        <p>
+          Main Stop, Lanja Phata,<br>
+          Dabhole Bk., Tal. Sangameshwar,<br>
+          Dist. Ratnagiri, Maharashtra – 415803
+        </p>
+
+        <a
+          class="map-btn"
+          href="https://www.google.com/maps/search/?api=1&query=Main+Stop,+Lanja+Phata,+Dabhole+Bk.,+Sangameshwar,+Ratnagiri,+Maharashtra+415803"
+          target="_blank">
+          📍 View Location
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+  <div class="container contact-grid">
+
+    <div>
+
+      <span class="tag">CONTACT SWARAYEE</span>
+
+      <h2>Let's Connect</h2>
+
+      <p class="contact-description">
+        Courses, admissions, digital services,
+        stamp services आणि इतर माहितीसाठी
+        आमच्याशी संपर्क साधा.
+      </p>
+
+      <br>
+
+      <div class="buttons">
+
+        <a
+          href="tel:+919561298384"
+          class="btn btn-primary">
+          📞 Call 9561298384
+        </a>
+
+        <a
+          href="https://wa.me/919561298384"
+          target="_blank"
+          class="btn btn-whatsapp">
+          💬 WhatsApp
+        </a>
+
+        <a
+          href="tel:+919421391077"
+          class="btn btn-outline">
+          📱 9421391077
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="contact-card">
+
+      <h3>Swarayee Comps & Infotech</h3>
+
+
+      <div class="contact-label">
+        Mobile / WhatsApp
+      </div>
+
+      <div class="contact-number">
+        <a href="tel:+919561298384">
+          📱 9561298384
+        </a>
+      </div>
+
+      <div class="contact-number">
+        <a href="tel:+919421391077">
+          📱 9421391077
+        </a>
+      </div>
+
+
+      <hr style="margin:20px 0;border:0;border-top:1px solid #e5e7eb;">
+
+
+      <div class="contact-label">
+        Landline
+      </div>
+
+      <div class="contact-number">
+        <a href="tel:02164251127">
+          ☎️ 02164-251127
+        </a>
+      </div>
+
+      <div class="contact-number">
+        <a href="tel:02164299799">
+          ☎️ 02164-299799
+        </a>
+      </div>
+
+
+      <hr style="margin:20px 0;border:0;border-top:1px solid #e5e7eb;">
+
+
+      <div class="contact-label">
+        Official Website
+      </div>
+
+      <div class="contact-number">
+        🌐 swarayeeinfotech.com
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <div class="container">
+
+    <img
+      src="logo.jpg"
+      alt="Swarayee Comps & Infotech Logo">
+
+    <strong>
+      Swarayee Comps & Infotech
+    </strong>
+
+    <p>
+      ज्ञानदीपः प्रगतये
+    </p>
+
+    <p>
+      Education • Digital • Skill Development • Digital Services • Business Services
+    </p>
+
+    <br>
+
+    <small>
+      © 2026 Swarayee Comps & Infotech. All Rights Reserved.
+    </small>
 
   </div>
 
 </footer>
 
 
-<!-- FLOATING WHATSAPP -->
+<!-- ================= FLOATING WHATSAPP ================= -->
+
 <a
-  class="sw-whatsapp"
+  class="whatsapp"
   href="https://wa.me/919561298384"
   target="_blank"
   aria-label="WhatsApp">
@@ -974,16 +1230,34 @@
 </a>
 
 
+<!-- ================= MENU SCRIPT ================= -->
+
 <script>
-  function toggleMenu() {
-    document.getElementById("swMenu").classList.toggle("open");
+
+  function openMenu() {
+
+    document
+      .getElementById("menu")
+      .classList
+      .toggle("show");
+
   }
 
-  document.querySelectorAll(".sw-menu a").forEach(function(link) {
-    link.addEventListener("click", function() {
-      document.getElementById("swMenu").classList.remove("open");
+  document
+    .querySelectorAll("#menu a")
+    .forEach(function(link) {
+
+      link.addEventListener("click", function() {
+
+        document
+          .getElementById("menu")
+          .classList
+          .remove("show");
+
+      });
+
     });
-  });
+
 </script>
 
 </body>
