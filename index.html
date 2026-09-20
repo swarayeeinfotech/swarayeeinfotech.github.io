@@ -1376,7 +1376,7 @@ footer{
 </div>
 </section>
 
-  <!-- DIGITAL PROFILES -->
+<!-- DIGITAL PROFILES -->
 <section class="digital-profiles">
     <div class="container">
 
@@ -1387,16 +1387,58 @@ footer{
 
         <div class="social-grid">
 
+            <!-- Instagram -->
             <a
                 href="https://www.instagram.com/swarayee_comps_and_infotech/"
                 target="_blank"
-                class="social-card instagram-link"
+                class="social-card"
+                onclick="gtag('event','instagram_1_click',{button_name:'Instagram 1'});"
             >
                 <span class="social-icon">📸</span>
-
                 <span class="social-info">
                     <strong>Instagram</strong>
                     <small>@swarayee_comps_and_infotech</small>
+                </span>
+            </a>
+
+            <!-- WhatsApp -->
+            <a
+                href="https://wa.me/919561298384"
+                target="_blank"
+                class="social-card"
+                onclick="gtag('event','whatsapp_click',{button_name:'WhatsApp'});"
+            >
+                <span class="social-icon">💬</span>
+                <span class="social-info">
+                    <strong>WhatsApp</strong>
+                    <small>Chat with Swarayee</small>
+                </span>
+            </a>
+
+            <!-- Call -->
+            <a
+                href="tel:+919561298384"
+                class="social-card"
+                onclick="gtag('event','call_click',{button_name:'Call'});"
+            >
+                <span class="social-icon">📞</span>
+                <span class="social-info">
+                    <strong>Call Us</strong>
+                    <small>9561298384</small>
+                </span>
+            </a>
+
+            <!-- Google Maps -->
+            <a
+                href="https://www.google.com/maps/dir/?api=1&destination=16.9698358%2C73.633193&travelmode=driving"
+                target="_blank"
+                class="social-card"
+                onclick="gtag('event','maps_click',{button_name:'Google Maps'});"
+            >
+                <span class="social-icon">📍</span>
+                <span class="social-info">
+                    <strong>Google Maps</strong>
+                    <small>Get Directions</small>
                 </span>
             </a>
 
@@ -1404,6 +1446,7 @@ footer{
 
     </div>
 </section>
+
 
 <!-- FOOTER -->
 <footer>
