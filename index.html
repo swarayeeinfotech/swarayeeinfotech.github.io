@@ -500,8 +500,8 @@ footer{
 
 /* JOURNEY */
 .about-journey{
-    margin-top:50px;
-    margin-bottom:50px;
+    margin-top:20px;
+    margin-bottom:35px;
 }
 
 .about-journey h3{
@@ -532,7 +532,7 @@ footer{
 
 /* MISSION / VISION / VALUES / MESSAGE */
 .about-mission{
-    margin-top:55px;
+    margin-top:30px;
 }
 
 .about-mission h3{
@@ -557,7 +557,181 @@ footer{
 .about-mission p strong{
     color:#123b70;
 }
-    
+
+/* =========================================
+   PREMIUM HERO UPGRADE
+   ========================================= */
+
+.hero{
+    position:relative;
+    min-height:680px;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5,24,55,.96) 0%,
+            rgba(5,24,55,.82) 42%,
+            rgba(5,24,55,.45) 72%,
+            rgba(5,24,55,.22) 100%
+        ),
+        url("logo-professional-panel.jpg") center/cover no-repeat;
+}
+
+/* subtle premium light effect */
+.hero::before{
+    content:"";
+    position:absolute;
+    width:520px;
+    height:520px;
+    right:-160px;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(43,203,226,.12);
+    border-radius:50%;
+    filter:blur(10px);
+    pointer-events:none;
+}
+
+/* hero content */
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    max-width:820px;
+    padding:105px 0;
+}
+
+/* Sanskrit tagline */
+.tagline{
+    display:inline-block;
+    font-size:17px;
+    letter-spacing:3px;
+    color:#8de9f5;
+    font-weight:700;
+    margin-bottom:24px;
+    padding:8px 15px;
+    border-left:3px solid #19b8d2;
+    background:rgba(255,255,255,.06);
+    backdrop-filter:blur(6px);
+    border-radius:0 8px 8px 0;
+}
+
+/* Main heading */
+.hero h2{
+    font-size:clamp(48px,6vw,78px);
+    line-height:1.02;
+    font-weight:800;
+    letter-spacing:-1.8px;
+    color:#ffffff;
+    max-width:800px;
+    margin-bottom:30px;
+
+    text-shadow:
+        0 5px 20px rgba(0,0,0,.38);
+}
+
+/* Description */
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+    font-weight:400;
+    letter-spacing:.1px;
+    color:#f2f8ff;
+    max-width:700px;
+    margin-bottom:38px;
+    text-align:left;
+
+    text-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+/* All buttons */
+.hero .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:50px;
+    padding:14px 27px;
+    border-radius:30px;
+    margin-right:10px;
+    margin-bottom:10px;
+    font-weight:700;
+    letter-spacing:.2px;
+    transition:all .3s ease;
+    box-shadow:0 8px 22px rgba(0,0,0,.18);
+}
+
+/* Primary */
+.hero .btn-primary{
+    background:linear-gradient(135deg,#13b7d0,#087f9c);
+    color:#ffffff;
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.hero .btn-primary:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 28px rgba(8,127,156,.38);
+}
+
+/* Contact */
+.hero .btn-light{
+    background:rgba(255,255,255,.96);
+    color:#123b70;
+    border:1px solid rgba(255,255,255,.7);
+}
+
+.hero .btn-light:hover{
+    transform:translateY(-4px);
+    background:#ffffff;
+    box-shadow:0 12px 28px rgba(255,255,255,.22);
+}
+
+/* WhatsApp */
+.hero .btn-whatsapp{
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+    color:#ffffff;
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.hero .btn-whatsapp:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 28px rgba(22,163,74,.35);
+}
+
+/* Mobile */
+@media(max-width:600px){
+
+    .hero{
+        min-height:650px;
+    }
+
+    .hero-content{
+        padding:85px 0;
+    }
+
+    .tagline{
+        font-size:14px;
+        letter-spacing:2px;
+    }
+
+    .hero h2{
+        font-size:42px;
+        line-height:1.06;
+        letter-spacing:-1px;
+    }
+
+    .hero p{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .hero .btn{
+        width:100%;
+        margin-right:0;
+    }
+}
 </style>
 </head>
 <body>
