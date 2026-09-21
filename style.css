@@ -9,8 +9,8 @@ body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--in
 .container{width:min(1120px,92%);margin:auto}
 .site-header{position:sticky;top:0;z-index:20;background:rgba(3,40,79,.98);box-shadow:0 3px 16px rgba(0,0,0,.12);border-bottom:3px solid var(--orange)}
 .nav-wrap{width:100%;max-width:none;margin:0;display:flex;align-items:center;justify-content:flex-start;min-height:78px;gap:28px;padding:0 3% 0 0}
-.brand{display:flex;align-items:center;justify-content:center;background:#fff;width:210px;height:66px;padding:5px 10px;border-radius:0 0 24px 0;box-shadow:3px 3px 0 rgba(242,138,0,.9);flex:0 0 auto}
-.brand img{display:block;width:190px;max-height:70px;height:auto;object-fit:contain;background:#fff;border-radius:3px}
+.brand{display:flex;align-items:center;justify-content:center;background:#fff;width:165px;height:66px;padding:5px 10px;border-radius:0 0 24px 0;box-shadow:3px 3px 0 rgba(242,138,0,.9);flex:0 0 auto}
+.brand img{display:block;width:145px;max-height:56px;height:auto;object-fit:contain;background:#fff;border-radius:3px}
 nav{display:flex;align-items:center;gap:6px;margin-left:auto}
 nav a{color:#fff;text-decoration:none;padding:10px 13px;border-radius:7px;font-weight:700;transition:.2s}
 nav a:hover{background:var(--orange)}
