@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="320" height="320" viewBox="0 0 320 320"
+     role="img" aria-labelledby="title desc">
+  <title id="title">Swarayee symbol</title>
+  <desc id="desc">Scalable education and technology symbol for the Swarayee header.</desc>
+  <defs>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a315e"/>
+      <stop offset="1" stop-color="#124d87"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0c5fa8"/>
+      <stop offset="1" stop-color="#187fc5"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8a00"/>
+      <stop offset=".55" stop-color="#ffb400"/>
+      <stop offset="1" stop-color="#f06a00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Technology / learning frame -->
+  <path d="M160 16 L270 80 L270 208 L160 272 L50 208 L50 80 Z"
+        fill="none" stroke="url(#navy)" stroke-width="22"
+        stroke-linejoin="round"/>
+  <path d="M160 48 L238 93 L238 190 L160 235 L82 190 L82 93 Z"
+        fill="none" stroke="#0d568f" stroke-width="10"
+        stroke-linejoin="round" opacity=".9"/>
+
+  <!-- Growth / learning figure -->
+  <circle cx="148" cy="104" r="16" fill="#ffb000"/>
+  <path d="M124 208
+           C108 178 109 150 124 126
+           C138 104 160 91 183 76
+           C174 105 179 129 197 149
+           C214 169 210 198 184 214
+           C166 225 141 222 124 208 Z"
+        fill="url(#orange)"/>
+  <path d="M171 105 C183 82 198 62 220 42
+           C220 68 231 86 250 101
+           C229 100 211 111 199 129
+           C191 118 182 110 171 105 Z"
+        fill="#ff9b00"/>
+
+  <!-- Open book -->
+  <path d="M55 197
+           C89 180 125 183 160 201
+           C195 183 231 180 265 197
+           L265 247
+           C230 229 196 231 160 250
+           C124 231 90 229 55 247 Z"
+        fill="none" stroke="url(#blue)" stroke-width="13"
+        stroke-linejoin="round"/>
+  <path d="M160 201 V250" fill="none" stroke="#0a5c9e" stroke-width="11"/>
+  <path d="M68 212 C101 199 129 201 149 212
+           M171 212 C191 201 219 199 252 212"
+        fill="none" stroke="#1d79bb" stroke-width="7"
+        stroke-linecap="round"/>
+
+  <!-- Graduation cap -->
+  <path d="M82 94 L160 52 L238 94 L160 136 Z"
+        fill="url(#navy)"/>
+  <path d="M107 112 V142
+           C127 154 193 154 213 142 V112"
+        fill="#0e4f86"/>
+  <path d="M238 94 V133" stroke="#0a315e" stroke-width="7"/>
+  <circle cx="238" cy="139" r="7" fill="#ff9a00"/>
+
+  <!-- Digital pixels -->
+  <g>
+    <rect x="21" y="98" width="17" height="17" rx="3" fill="#0e6cb0"/>
+    <rect x="14" y="126" width="12" height="12" rx="2" fill="#ff9a00"/>
+    <rect x="42" y="73" width="15" height="15" rx="3" fill="#176eae"/>
+    <rect x="56" y="48" width="13" height="13" rx="2" fill="#ff9a00"/>
+    <rect x="28" y="153" width="15" height="15" rx="3" fill="#0e6cb0"/>
+  </g>
+</svg>
