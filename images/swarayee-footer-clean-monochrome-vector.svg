@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1920" height="650" viewBox="0 0 1920 650">
+  <title>Swarayee subtle monochrome 2D footer background</title>
+  <desc>Background-only tonal vector illustration for the Swarayee website footer.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062b52"/>
+      <stop offset="1" stop-color="#031a34"/>
+    </linearGradient>
+    <linearGradient id="tone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#68b8e8" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#1d73aa" stop-opacity=".07"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2b9ad8" stop-opacity=".22"/>
+      <stop offset=".5" stop-color="#17669f" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#38a9e4" stop-opacity=".20"/>
+    </linearGradient>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.8" fill="#6bbbe9" opacity=".07"/>
+    </pattern>
+  </defs>
+
+  <rect width="1920" height="650" fill="url(#bg)"/>
+  <rect x="0" y="0" width="390" height="300" fill="url(#dots)"/>
+  <rect x="1530" y="0" width="390" height="300" fill="url(#dots)"/>
+
+  <!-- LEFT: education silhouette -->
+  <g fill="url(#tone)" stroke="#63b7e7" stroke-opacity=".10">
+    <circle cx="188" cy="250" r="50" stroke-width="0"/>
+    <path d="M145 330 C162 294, 206 279, 244 296
+             C279 312, 302 347, 323 392
+             L285 405 C270 369, 246 349, 217 340
+             C201 362, 176 385, 143 402
+             L118 371 Z" stroke-width="3"/>
+    <path d="M118 218 L188 180 L258 218 L188 255 Z" stroke-width="3"/>
+    <path d="M188 255 V279" fill="none" stroke-width="4"/>
+    <circle cx="188" cy="284" r="4" stroke="none"/>
+
+    <!-- uplift arm -->
+    <path d="M232 318 C286 286, 321 242, 339 194 L361 204
+             C352 263, 315 324, 268 354 Z" stroke-width="3"/>
+    <path d="M338 150 l10 26 28 2 -22 18 7 28 -23-15 -24 15 8-28 -22-18 28-2z"
+          stroke="none"/>
+
+    <!-- open book -->
+    <path d="M42 500
+             C105 466, 166 468, 228 495
+             C291 468, 352 470, 418 505
+             L418 557
+             C351 528, 292 529, 228 555
+             C165 529, 105 529, 42 558 Z"
+          stroke-width="4"/>
+    <path d="M228 495 V555" fill="none" stroke-width="4"/>
+    <path d="M68 514 C122 490, 170 493, 211 510
+             M246 510 C289 492, 339 494, 392 518"
+          fill="none" stroke-width="3"/>
+  </g>
+
+  <!-- LEFT page swooshes -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M0 565 C175 510, 360 618, 545 558" stroke="#2c9fdf" stroke-opacity=".17" stroke-width="12"/>
+    <path d="M0 582 C180 532, 355 633, 560 575" stroke="#63b7e7" stroke-opacity=".08" stroke-width="4"/>
+    <path d="M0 598 C190 550, 360 648, 575 590" stroke="#63b7e7" stroke-opacity=".06" stroke-width="3"/>
+  </g>
+
+  <!-- RIGHT: digital network -->
+  <g fill="none" stroke="#63b7e7" stroke-opacity=".10">
+    <circle cx="1580" cy="250" r="118" stroke-width="5"/>
+    <ellipse cx="1580" cy="250" rx="54" ry="118" stroke-width="4"/>
+    <ellipse cx="1580" cy="250" rx="92" ry="118" stroke-width="3"/>
+    <path d="M1462 250 H1698 M1472 202 H1688 M1472 298 H1688" stroke-width="4"/>
+    <ellipse cx="1580" cy="250" rx="184" ry="78" stroke-width="4"/>
+    <ellipse cx="1580" cy="250" rx="132" ry="168" stroke-width="3"/>
+  </g>
+
+  <!-- network nodes -->
+  <g fill="#67bbed" opacity=".13" stroke="none">
+    <circle cx="1418" cy="248" r="8"/>
+    <circle cx="1514" cy="102" r="7"/>
+    <circle cx="1715" cy="148" r="8"/>
+    <circle cx="1758" cy="300" r="8"/>
+    <circle cx="1620" cy="425" r="8"/>
+    <circle cx="1435" cy="355" r="7"/>
+    <circle cx="1760" cy="82" r="6"/>
+  </g>
+  <g fill="none" stroke="#67bbed" stroke-opacity=".09" stroke-width="3">
+    <path d="M1418 248 L1514 102 L1580 132"/>
+    <path d="M1715 148 L1760 82 L1840 120"/>
+    <path d="M1758 300 L1825 337"/>
+    <path d="M1620 425 L1700 382"/>
+  </g>
+
+  <!-- right icon circles -->
+  <g fill="none" stroke="#63b7e7" stroke-opacity=".10" stroke-width="5">
+    <circle cx="1450" cy="118" r="44"/>
+    <circle cx="1714" cy="110" r="44"/>
+    <circle cx="1785" cy="244" r="44"/>
+    <circle cx="1412" cy="372" r="44"/>
+  </g>
+
+  <!-- cloud -->
+  <path d="M1424 127 C1410 127, 1401 118, 1401 104
+           C1401 87, 1415 75, 1432 76
+           C1439 61, 1452 53, 1468 56
+           C1487 59, 1499 74, 1499 92
+           C1499 112, 1484 127, 1466 127 Z"
+        fill="none" stroke="#63b7e7" stroke-opacity=".10" stroke-width="6"/>
+
+  <!-- wifi -->
+  <g fill="none" stroke="#63b7e7" stroke-opacity=".12" stroke-linecap="round">
+    <path d="M1688 105 C1705 86, 1730 86, 1747 105" stroke-width="6"/>
+    <path d="M1698 121 C1708 111, 1726 111, 1737 121" stroke-width="6"/>
+    <circle cx="1718" cy="136" r="5" fill="#63b7e7" stroke="none"/>
+  </g>
+
+  <!-- people -->
+  <g fill="none" stroke="#63b7e7" stroke-opacity=".10" stroke-width="6">
+    <circle cx="1785" cy="224" r="10"/>
+    <circle cx="1768" cy="232" r="8"/>
+    <circle cx="1802" cy="232" r="8"/>
+    <path d="M1761 255 C1764 244, 1774 240, 1785 240 C1796 240, 1806 244, 1809 255"/>
+    <path d="M1751 251 C1752 244, 1759 240, 1766 241"/>
+    <path d="M1804 241 C1811 240, 1818 244, 1819 251"/>
+  </g>
+
+  <!-- gear -->
+  <g transform="translate(1412 372)" fill="none" stroke="#63b7e7" stroke-opacity=".10" stroke-width="6">
+    <circle r="15"/>
+    <path d="M0-30 V-20 M0 20 V30 M-30 0 H-20 M20 0 H30
+             M-21-21 L-14-14 M14 14 L21 21 M21-21 L14-14 M-14 14 L-21 21"/>
+  </g>
+
+  <!-- monitor / computer -->
+  <g transform="translate(1350 395)" fill="none" stroke="#63b7e7" stroke-opacity=".11">
+    <rect x="0" y="0" width="190" height="110" rx="9" stroke-width="5"/>
+    <rect x="15" y="16" width="160" height="72" stroke-width="3"/>
+    <path d="M86 113 H104 V133 H86 M70 137 H120" stroke-width="5"/>
+    <g fill="#63b7e7" fill-opacity=".09" stroke="none">
+      <rect x="40" y="62" width="18" height="26"/>
+      <rect x="70" y="49" width="18" height="39"/>
+      <rect x="100" y="34" width="18" height="54"/>
+      <rect x="130" y="23" width="18" height="65"/>
+    </g>
+  </g>
+
+  <!-- growth -->
+  <path d="M1515 504 C1590 471, 1660 430, 1755 332"
+        fill="none" stroke="#63b7e7" stroke-opacity=".11" stroke-width="8"/>
+  <path d="M1730 333 L1758 329 L1753 357"
+        fill="none" stroke="#63b7e7" stroke-opacity=".11" stroke-width="8"/>
+  <g fill="#63b7e7" fill-opacity=".08">
+    <rect x="1554" y="477" width="30" height="27" rx="2"/>
+    <rect x="1598" y="452" width="30" height="52" rx="2"/>
+    <rect x="1642" y="422" width="30" height="82" rx="2"/>
+    <rect x="1686" y="388" width="30" height="116" rx="2"/>
+  </g>
+
+  <!-- Center remains intentionally clear for real footer text -->
+  <g fill="none" stroke="#63b7e7" stroke-opacity=".045">
+    <circle cx="960" cy="260" r="155" stroke-width="2"/>
+    <circle cx="960" cy="260" r="205" stroke-width="1"/>
+  </g>
+
+  <!-- bottom waves -->
+  <path d="M-80 563 C210 510, 450 638, 760 601
+           C1070 565, 1245 525, 1510 575
+           C1700 611, 1810 648, 2000 590"
+        fill="none" stroke="url(#wave)" stroke-width="34"/>
+  <path d="M-80 583 C220 530, 455 652, 770 619
+           C1070 585, 1250 545, 1515 594
+           C1710 628, 1825 665, 2000 608"
+        fill="none" stroke="#5db9e9" stroke-opacity=".07" stroke-width="4"/>
+  <path d="M-80 600 C230 550, 460 666, 780 636
+           C1080 606, 1260 565, 1520 610
+           C1715 642, 1835 680, 2000 625"
+        fill="none" stroke="#5db9e9" stroke-opacity=".045" stroke-width="3"/>
+</svg>
