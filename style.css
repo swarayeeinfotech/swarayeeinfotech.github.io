@@ -46,7 +46,7 @@ h1 span{display:block;color:var(--orange)}
 .contact h2{font-size:40px;margin:8px 0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px}
 .contact-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);padding:26px;border-radius:15px}
 .contact-card strong{font-size:24px}
-footer{background:#021d38;color:#fff;padding:24px 0}
+footer{background:#021d38 url("images/swarayee-footer-background.png") center/cover no-repeat;color:#fff;padding:24px 0}
 .footer-wrap{display:flex;align-items:center;gap:20px}.footer-wrap img{width:130px;height:auto;background:#fff;border-radius:5px}
 footer small{opacity:.7}
 @media(max-width:850px){
