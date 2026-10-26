@@ -896,6 +896,49 @@ section#home,
   .hero-section h1 {
     font-size: clamp(27px, 7vw, 34px) !important;
   }
+  /* Swarayee Hero Section — compact layout */
+#home.hero {
+  min-height: 370px !important;
+  height: auto !important;
+  padding: 32px 0 !important;
+  background-color: #102444 !important;
+
+  /* Keep the overlay and reduce the background image size */
+  background-size: cover, 58% auto !important;
+  background-position: center, right center !important;
+  background-repeat: no-repeat, no-repeat !important;
+}
+
+#home.hero .hero-content {
+  max-width: 720px;
+}
+
+#home.hero h2 {
+  font-size: clamp(30px, 3.5vw, 44px) !important;
+  line-height: 1.12 !important;
+  max-width: 680px;
+  margin-bottom: 18px !important;
+}
+
+#home.hero p {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  max-width: 650px;
+  margin-bottom: 20px !important;
+}
+
+/* Mobile display */
+@media (max-width: 767px) {
+  #home.hero {
+    min-height: 320px !important;
+    padding: 26px 0 !important;
+    background-size: cover, 90% auto !important;
+    background-position: center, right center !important;
+  }
+
+  #home.hero h2 {
+    font-size: clamp(27px, 7vw, 35px) !important;
+  }
 </style>
 </head>
 <body>
