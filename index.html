@@ -978,6 +978,50 @@ section#home,
   background-size: cover, 30% auto !important;
   background-position: center, right center !important;
 }
+  /* Compact Hero Section — preserve heading font size */
+#home.hero {
+  min-height: unset !important;
+  height: auto !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+#home.hero .container,
+#home.hero .hero-content {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#home.hero .tagline {
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
+}
+
+#home.hero .hero-content h2 {
+  /* Keep the existing heading font size */
+  margin-top: 8px !important;
+  margin-bottom: 10px !important;
+  line-height: 1.12 !important;
+}
+
+#home.hero .hero-content p {
+  margin-top: 6px !important;
+  margin-bottom: 10px !important;
+  line-height: 1.45 !important;
+}
+
+#home.hero .hero-content .btn {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+@media (max-width: 767px) {
+  #home.hero {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
 </style>
 </head>
 <body>
